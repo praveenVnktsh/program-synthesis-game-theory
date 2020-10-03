@@ -1,9 +1,9 @@
 
 import json
-f = open('I:/datasets/naps.trainB.1.0.jsonl','r')
-textsFile = open('I:/datasets/trainBInput1.txt', 'w')
-codeFile = open('I:/datasets/trainBCode1.txt', 'w')
-testsFile = open('I:/datasets/trainBTests1.txt', 'w')
+f = open('I:/datasets/naps.test.1.0.jsonl','r')
+textsFile = open('I:/datasets/testBInput.txt', 'w')
+codeFile = open('I:/datasets/testBCode.txt', 'w')
+testsFile = open('I:/datasets/testBTests.txt', 'w')
 
 errorFile = open('errorFile.txt','w')
 index = 0
