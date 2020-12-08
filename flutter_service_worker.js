@@ -27,9 +27,15 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+<<<<<<< HEAD
+"index.html": "454e15c3582b739c0a93dc132e64846f",
+"/": "454e15c3582b739c0a93dc132e64846f",
+"main.dart.js": "a7abcdfdc15fd16c5d2470df205d1011",
+=======
 "index.html": "e99e869241a8cf8a2b06d69dfa0c00cf",
 "/": "e99e869241a8cf8a2b06d69dfa0c00cf",
 "main.dart.js": "092eb6b72aa836828ebed2fb4ccb0580",
+>>>>>>> parent of 7801c0a... Update for mobile
 "manifest.json": "dedebe9e5e14c02a0e24bc20c5b7a2bd",
 "server.py": "bd3222b242c3f2f35d0d7cbaa02101c2",
 "version.json": "cd9aff8e57d8a329a9bc18e8b0909526"
