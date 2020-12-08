@@ -1,9 +1,6 @@
 # Program Synthesis
 ----------------------
-Novel approach to program synthesis using a feedback loop using training.
-
-This repo is a WIP.
-
+View the demo here: https://praveenvnktsh.github.io/program-synthesis-game-theory/web/#/
 
 
 
