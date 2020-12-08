@@ -75,7 +75,7 @@ def joinFuncText(sequence):
             i += 1
             if i == len(sequence):
                 return joined, "ISSUE", sequence[i-1]
-            print(joined)
+            # print(joined)
             if sequence[i] == '.':
                 joined += sequence[i]
                 i+=1
@@ -87,10 +87,10 @@ def joinFuncText(sequence):
     return joined, "OK", sequence[i-1]
 
 
-def cleanFile(fileName, boolean = False, prefix = 'ONMT/FULLVOCAB/'):
+def cleanFile(fileName, boolean = True, prefix = 'extracted-data/FULLVOCAB/'):
     print()
     print(fileName)
-    f = open(fileName + '.jsonl','r')
+    f = open('I:/datasets/NAPS dataset/' + fileName + '.jsonl','r')
 
     codeFile = open(prefix +fileName + '-code.txt', 'w')
     textFile = open(prefix +fileName + '-texts.txt', 'w')
@@ -115,12 +115,12 @@ def cleanFile(fileName, boolean = False, prefix = 'ONMT/FULLVOCAB/'):
         #     print("ERROR AT ", lineCount)
         if boolean:
             # dist = int(len(dictionary['texts'])/10)
-            dist = 7
-            for i in range(dist):
-                text, status, errorAt = joinFuncText(dictionary['texts'][i])
+            # dist = 7
+            # for i in range(dist):
+            text, status, errorAt = joinFuncText(dictionary['texts'][0])
 
-                codeFile.write(text + '\n')
-                textFile.write(sequence + '\n')
+            codeFile.write(text + '\n')
+            textFile.write(sequence + '\n')
         else:
             text, status, errorAt = joinFuncText(dictionary['text'])
             codeFile.write(text + '\n')
@@ -162,7 +162,7 @@ def graphAllFiles():
 def cleanAllFiles():
     # cleanFile('naps.test.1.0')
     # cleanFile('naps.trainA.1.0', True)
-    cleanFile('naps.trainB.1.0')
+    cleanFile('naps.trainA.1.0')
 
 def runAll():
     graphAllFiles()

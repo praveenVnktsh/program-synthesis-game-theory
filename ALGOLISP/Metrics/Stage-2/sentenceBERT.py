@@ -13,7 +13,7 @@ class NumpyArrayEncoder(JSONEncoder):
             return obj.tolist()
         return JSONEncoder.default(self, obj)
 
-model = SentenceTransformer('distilbert-base-nli-mean-tokens')
+model = SentenceTransformer('I:/datasets/program-synthesis-game-theory/ALGOLISP/Metrics/Stage-2/models/finetuned/')
 
 gtEncodings = open('encodingsGT.txt','w')
 predEncodings = open('encodingsPred.txt','w')
